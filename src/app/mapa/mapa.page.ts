@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import * as L from 'leaflet';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'mapa',
@@ -16,7 +17,7 @@ export class MapaPage {
   localName: string = ''; 
   postalCode: string = ''; 
 
-  constructor(private navCtrl: NavController) {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     this.map = L.map('map', {
@@ -132,7 +133,7 @@ export class MapaPage {
   }
 
   irParaInicio() {
-    this.navCtrl.navigateForward('/home');
+    this.router.navigate(['/home']);
   }
 
 }

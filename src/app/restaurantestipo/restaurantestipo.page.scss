@@ -1,0 +1,107 @@
+ion-content.background{
+    --ion-background-color:#121212}
+
+ion-header.header{margin-top: 3%;}
+
+ion-menu.menu{height: 100px;
+width: 100px;}
+
+
+#card1{
+    color: white;
+    background-image: url('../Imagens/todos.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card2{
+    color: white;
+    background-image: url('../Imagens/brasileiro.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card3{
+    color: white;
+    background-image: url('../Imagens/italiana.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card4{
+    color: white;
+    background-image: url('../Imagens/francesa.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card5{
+    color: white;
+    background-image: url('../Imagens/japonesa.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card6{
+    color: white;
+    background-image: url('../Imagens/mexicano.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card7{
+    color: white;
+    background-image: url('../Imagens/tailandesa.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+#card8{
+    color: white;
+    background-image: url('../Imagens/nigeriana.png');
+    width: 150px;
+    height: 150px;
+    
+}
+
+.center-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .center-title {
+    text-align: center;
+    margin: 0;
+  }
+
+  ion-header.header{margin-top: 4%;}
+
+ion-searchbar{--width: 50%
+  box-shadow: 2px 2px 5px black;}
+
+ion-footer{
+ 
+  height: 90px;}
+
+ion-tab-bar{
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 50px;
+ 
+ 
+
+}
+
+.sp{
+    margin-top: 10%;
+}

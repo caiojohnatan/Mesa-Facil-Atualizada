@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -12,7 +13,7 @@ export class HomePage {
   data: string[] = []; // Inicialize com um array vazio
   limite: number = 50; // Defina o limite de itens a carregar
 
-  constructor(private navCtrl: NavController) {
+  constructor(private router: Router) {
     this.loadData(null); // Carregue os primeiros dados
   }
 
@@ -38,6 +39,6 @@ export class HomePage {
 
   
   irParaMapa() {
-    this.navCtrl.navigateForward("/mapa");
+    this.router.navigate(['/mapa']);
   }
 }

@@ -13,9 +13,9 @@
         </ion-fab>       
 
         <div id="map"></div>
-        <ion-fab bottom id="menuButtons" class="menu-buttons">   
-          <ion-fab-button (click)="updateMapLocation(this.latitude, this.longitude)">
-            <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-fab bottom id="menuButtons" class="menu-buttons" >   
+          <ion-fab-button color="medium" (click)="updateMapLocation(this.latitude, this.longitude)">
+            <ion-icon name="radio-button-on" color="light" id=""></ion-icon>
           </ion-fab-button>
         </ion-fab>       
       </div>
@@ -37,8 +37,8 @@
             
             </ion-tab-button>
            
-            <ion-tab-button class="border" tab="home">
-              <ion-icon (click)="irParaInicio()" class="button" color="medium" name="home"></ion-icon>
+            <ion-tab-button href="/home" class="border" >
+              <ion-icon  class="button" color="medium" name="home"></ion-icon>
               <ion-text >
               Início</ion-text>
             </ion-tab-button>

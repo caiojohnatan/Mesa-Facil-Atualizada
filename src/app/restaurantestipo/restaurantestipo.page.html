@@ -1,0 +1,158 @@
+<ion-content class="background" [fullscreen]="true">
+  <ion-header class="header" collapse="condense">
+    <ion-toolbar>
+      <ion-app>
+    
+        <div class="ion-page" id="main-content">
+         
+          <ion-toolbar>
+            <ion-buttons slot="start">
+             
+            </ion-buttons>
+            <ion-searchbar class="pesquisa" animated="true" color="medium" placeholder="Pesquisar"></ion-searchbar>
+          </ion-toolbar>
+       
+        <ion-content class="ion-padding"> Tap the button in the toolbar to open the menu. </ion-content>
+      </div>
+    </ion-app>
+  </ion-toolbar>
+</ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 1')" id="card1" class="center-card">
+            <ion-card-header class="center-title">
+              <ion-card-title>Todos</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 2')" class="center-card" id="card2">
+            <ion-card-header>
+              <ion-card-title>Brasileira</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    <div class="spacer"></div>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 3')" class="center-card" id="card3">
+            <ion-card-header>
+              <ion-card-title>Italiana</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 4')" class="center-card" id="card4">
+            <ion-card-header>
+              <ion-card-title>Francesa</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+    
+    <div class="spacer"></div>
+  
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 5')" class="center-card" id="card5">
+            <ion-card-header>
+              <ion-card-title>Japonesa</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 6')" class="center-card" id="card6">
+            <ion-card-header>
+              <ion-card-title>Mexicana</ion-card-title>
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  
+
+    <div class="spacer"></div>
+  
+    <ion-grid>
+      <ion-row class="">
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 7')" class="center-card" id="card7">
+            <ion-card-header>
+              <ion-card-title>Tailandesa</ion-card-title>
+
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+        <ion-col size="6">
+          <ion-card color="primary" (click)="onCardClick('Card 8')" class="center-card" id="card8">
+            <ion-card-header>
+              <ion-card-title>Nigeriana</ion-card-title>
+      
+            </ion-card-header>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <div class="sp"></div>
+    
+  </ion-content>
+  
+
+  
+
+    </ion-content>
+
+    <ion-footer class="footer" >
+     
+      <ion-tabs class="footer">
+        <ion-tab-bar class="tabBar" color="dark" slot="bottom">
+
+          <ion-tab-button tab="menu">
+            <ion-menu-button color="medium" class="button"></ion-menu-button>
+            <ion-text>
+              Menu</ion-text>
+          
+          </ion-tab-button>
+         
+          <ion-tab-button  href="/home" class="border">
+            <ion-icon class="button" color="medium" name="home"></ion-icon>
+            <ion-text >
+            Início</ion-text>
+          </ion-tab-button>
+          <ion-tab-button color="warning" tab="radio">
+            <ion-icon color="medium" class="button" name="heart"></ion-icon>
+            <ion-text >
+              Favoritos</ion-text>
+         
+          </ion-tab-button>
+          <ion-tab-button href="/mapa">
+            <ion-icon color="medium"  class="button" name="map"></ion-icon>
+            <ion-text >
+              Mapa</ion-text>
+       
+          </ion-tab-button>
+        
+       
+    
+         
+        </ion-tab-bar>
+      </ion-tabs>
+    
+  </ion-footer>
+  
