@@ -1,0 +1,135 @@
+ion-content.background{
+    --ion-background-color:#333332}
+  
+  ion-button.reservebtn{
+    margin-left: 40%;
+    padding-bottom: 20%;
+    height: 40px;
+    font-size: 16px;
+    width: 150px;
+  }
+  
+  ion-header.header{margin-top: 4%;}
+  
+  ion-searchbar{--width: 50%
+    box-shadow: 2px 2px 5px black;}
+  
+  ion-footer{
+   
+    height: 90px;}
+  
+  ion-tab-bar{
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 50px;
+   
+   
+  
+  }
+  
+  ion-card.grad1{
+    background: linear-gradient(rgba(241,75,55)55%,rgba(251,169,63));
+  }
+  
+  ion-icon.button{
+          
+          padding: 5px;        
+          width: 35px;
+          height: 35px;        
+          
+        }
+  
+    .imgCard{
+        background-image: url(https://www.guiadasemana.com.br/contentFiles/system/pictures/2013/4/74658/original/fronteira.jpg);
+        height: 200px;
+        box-shadow: 0px 3px 5px black;
+    }
+  
+    .container1{height: 200px;
+        background: linear-gradient(rgba(0,0,0,0.85),rgba(251,169,63,0));
+    
+  ;}
+  
+  .container2{
+  
+    margin-left: 5%;
+    margin-bottom: 5%;
+    margin-top: 3%;
+  
+  
+  };
+  
+  .TituloPagina{
+    margin-top: 50%;
+    margin-left: 34%;
+  }
+  
+  .imgBtnExplorar{
+    background-image: url(../../assets/Imagens/explorar.jpg);
+     background-size:cover;
+     border-radius: 10px;
+     box-shadow: 2px 2px 5px black;
+     height: 75px;
+     
+  
+    }
+  
+    .imgBtnRecomendados{
+      background-image: url(../../assets/Imagens/recomendados.jpg);
+       background-size:cover;
+       border-radius: 10px;
+       box-shadow: 2px 2px 5px black;
+       height: 75px;
+       
+    
+      }
+  
+      .imgBtnMaisProximos{
+        background-image: url(../../assets/Imagens/maisProximos.jpg);
+         background-size:cover;
+         border-radius: 10px;
+         box-shadow: 2px 2px 5px black;
+         height: 75px;
+         
+      
+        }
+  
+        .imgBtnFavoritos{
+          background-image: url(../../assets/Imagens/favoritos.jpg);
+           background-size:cover;
+           border-radius: 10px;
+           box-shadow: 2px 2px 5px black;
+           height: 75px;
+           
+        
+          }
+    
+  
+  
+    ion-card-title{
+    font-size: 18px;
+    padding-top: 14px ;
+    padding-left: 15px;
+    padding-bottom: 0px;
+  }
+  
+  ion-card-subtitle{
+    padding-left: 17px;
+    font-size: 9px;
+  }
+  
+  ion-icon.star{
+    width: 15px;
+    height: 15px;
+    padding-top: 19px;
+  
+  }
+  
+  
+  
+  
+     
+   
+  
+    

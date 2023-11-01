@@ -1,0 +1,122 @@
+<ion-content class="background" [fullscreen]="true">
+  <ion-header class="header" collapse="condense">
+    <ion-toolbar>
+      <ion-app>
+          <ion-toolbar>
+
+            <ion-searchbar class="pesquisa" animated="true" color="medium" placeholder="Pesquisar"></ion-searchbar>
+          </ion-toolbar>
+    </ion-app>
+  </ion-toolbar>
+</ion-header>
+
+<div class="container2">
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">     
+       <ion-button color="none" expand="block" class="imgBtnExplorar">Explorar<div class="shadow"></div></ion-button>      
+      </ion-col>
+
+      <ion-col size="1"></ion-col>
+
+      <ion-col size="4">     
+        <ion-button color="none" expand="block" class="imgBtnMaisProximos">Novidades<div class="shadow"></div></ion-button>      
+       </ion-col>
+
+    </ion-row>
+    <ion-row>
+      <ion-col size="11">     
+       <ion-button color="none" expand="block" class="imgBtnRecomendados">Recomendados<div class="shadow"></div></ion-button>      
+      </ion-col>
+      
+      
+       
+
+    </ion-row>
+
+    
+  </ion-grid>
+
+
+  </div>
+
+
+  <ion-text color="light" class="TituloPagina">Últimas Reservas</ion-text>
+  
+
+  <ion-list>
+    <ion-list>
+      <ion-item *ngFor="let item of data">
+        <ion-card class="grad1">
+          <div class="imgCard">
+            <div class="container1">
+              <ion-grid>
+                <ion-row>
+                  <ion-col size="7"><ion-card-title color="light">Frontera</ion-card-title></ion-col>
+                  <ion-col><ion-icon color="light" class="star" name="star"></ion-icon></ion-col>
+                  <ion-col><ion-icon color="light" class="star" name="star"></ion-icon></ion-col>
+                  <ion-col><ion-icon color="light" class="star" name="star"></ion-icon></ion-col>
+                  <ion-col><ion-icon color="light" class="star" name="star"></ion-icon></ion-col>
+                  <ion-col><ion-icon color="light" class="star" name="star"></ion-icon></ion-col>
+                </ion-row>
+                <ion-row><ion-col size="7"><ion-card-subtitle color="light">Barra da Tijuca</ion-card-subtitle></ion-col> </ion-row>
+              </ion-grid>
+              
+            
+            </div>
+          </div>
+          <ion-card-content>
+            <ion-text  color="light"> Here's a small text description for the card content. Nothing more, nothing less.</ion-text>
+           
+          </ion-card-content>
+          <div class="reservebtn">
+          <ion-button class="reservebtn" color="dark">Reserve</ion-button>
+          </div>
+        </ion-card>
+      </ion-item>
+    </ion-list>
+    <ion-infinite-scroll  (ionInfinite)="loadData($event)" >
+      <ion-infinite-scroll-content loadingText="Please wait..." loadingSpinner="bubbles"></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+
+  </ion-list>
+    </ion-content>
+
+    <ion-footer class="footer" >
+     
+        <ion-tabs class="footer">
+          <ion-tab-bar class="tabBar" color="dark" slot="bottom">
+
+            <ion-tab-button  tab="menu">
+              <ion-menu-button color="medium" class="button"></ion-menu-button>
+              <ion-text>
+                Menu</ion-text>
+            
+            </ion-tab-button>
+           
+            <ion-tab-button class="border" tab="home">
+              <ion-icon class="button" color="warning" name="home"></ion-icon>
+              <ion-text >
+              Início</ion-text>
+            </ion-tab-button>
+            <ion-tab-button color="warning" tab="radio">
+              <ion-icon color="medium" class="button" name="heart"></ion-icon>
+              <ion-text >
+                Favoritos</ion-text>
+           
+            </ion-tab-button>
+            <ion-tab-button (click)="irParaMapa()">
+              <ion-icon color="medium"  class="button" name="map"></ion-icon>
+              <ion-text >
+                Mapa</ion-text>
+         
+            </ion-tab-button>
+          
+            
+      
+           
+          </ion-tab-bar>
+        </ion-tabs>
+      
+    </ion-footer>

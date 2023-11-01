@@ -1,0 +1,65 @@
+<ion-content class="background" [fullscreen]="true">
+  
+ 
+
+    
+
+
+  <ion-content>
+    <div class="map-container">
+      <div class="map-frame">
+        <ion-fab class="pesquisa">   
+            <ion-searchbar class="pesquisa" animated="true" color="medium" placeholder="Pesquisar" [(ngModel)]="searchInput" (ionChange)="searchLocation()"></ion-searchbar>
+        </ion-fab>       
+
+        <div id="map"></div>
+        <ion-fab bottom id="menuButtons" class="menu-buttons">   
+          <ion-fab-button (click)="updateMapLocation(this.latitude, this.longitude)">
+            <ion-icon name="person-circle-outline"></ion-icon>
+          </ion-fab-button>
+        </ion-fab>       
+      </div>
+    </div>
+  </ion-content>
+
+
+    </ion-content>
+
+    <ion-footer class="footer" >
+     
+        <ion-tabs class="footer">
+          <ion-tab-bar class="tabBar" color="dark" slot="bottom">
+
+            <ion-tab-button  tab="menu">
+              <ion-menu-button color="medium" class="button"></ion-menu-button>
+              <ion-text>
+                Menu</ion-text>
+            
+            </ion-tab-button>
+           
+            <ion-tab-button class="border" tab="home">
+              <ion-icon (click)="irParaInicio()" class="button" color="medium" name="home"></ion-icon>
+              <ion-text >
+              Início</ion-text>
+            </ion-tab-button>
+            <ion-tab-button color="warning" tab="radio">
+              <ion-icon color="medium" class="button" name="heart"></ion-icon>
+              <ion-text >
+                Favoritos</ion-text>
+           
+            </ion-tab-button>
+            <ion-tab-button>
+              <ion-icon  color="warning"  class="button" name="map"></ion-icon>
+              <ion-text >
+                Mapa</ion-text>
+         
+            </ion-tab-button>
+          
+            
+      
+           
+          </ion-tab-bar>
+        </ion-tabs>
+      
+    </ion-footer>
+    
